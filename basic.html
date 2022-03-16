@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <p>{{ information.name }}</p>
+        <p>{{ information.id }}</p>
+    </div>
+    <div id="app2">
+        <ul v-for="word of words">
+            <li>{{ word }}</li>
+        </ul>
+    </div>
+    <div id="app3">
+        <img v-bind:src="picsumImage" />
+    </div>
+</body>
+    <script src="basic.js"></script>
+</html>
